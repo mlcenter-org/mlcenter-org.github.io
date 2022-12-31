@@ -130,8 +130,17 @@ function render() {
 
 $(document).ready(function() {
 
-$('iframe').on('load', function() {
-    this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
-});
+	let navbar = $('#navbar');
+	// add class scraolled if navbar is not at the top of the page
 
-});
+	$(window).on('scroll',function() {
+
+		if (navbar.offset().top > 300) {
+			navbar.addClass('bg-white');
+		}
+		else{
+			navbar.removeClass('bg-white');
+		}
+	});
+
+})
