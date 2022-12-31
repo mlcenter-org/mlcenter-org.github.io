@@ -128,3 +128,10 @@ function render() {
 
 }
 
+$(document).ready(function() {
+
+$('iframe').on('load', function() {
+    this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+});
+
+});

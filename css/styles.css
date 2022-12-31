@@ -175,3 +175,31 @@
   bottom:0%;
 }
 
+
+.carbon-iframe{
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden !important;
+  min-height: 50vh;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  #logo2 .part-1{
+    font-size: 5.5rem;
+
+  }
+  
+  #logo2 .part-2{
+    font-size: 1.75rem;
+    margin-top: -42px;
+  }
+
+  .carbon-iframe{
+    min-height: 80vh;
+  }
+
+
+}
+
